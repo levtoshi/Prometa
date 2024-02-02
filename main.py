@@ -6,4 +6,6 @@ x = 2 + 2
 
 print(x)
 
-print('Levtoshi')
+x = 13
+
+print(x)
