@@ -6,21 +6,19 @@ from utils import *
 win = CTk()
 win.geometry('800x800+550+150')
 win.resizable(False, False)
-
-win.iconbitmap('button icons/fire.ico')
 win.title('Prometa')
+win.iconbitmap('button icons/fire-white.ico') # Для Макса - Тут для темної теми вікна береш fire-white, а для світлої fire
 
 
 # Button settings
-button_font = ('Roboto', 13)
+button_font = ('e-Ukraine Regular', 15)
 button_color = '#2147cf'
-button_hover_color = '#0228b0'
+button_hover_color = '#0936d9'
 button_g = 150
 button_ico_size = (80, 80)
 button_radius = 33
 button_compound = 'top'
 set_appearance_mode('dark')
-
 
 
 # Icons for button
