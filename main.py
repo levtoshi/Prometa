@@ -1,5 +1,5 @@
 #Idea Opus Proventus
+from utils import *
 
-print('Hello World')
 
 # Commit 16.02.2024
