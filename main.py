@@ -1,11 +1,16 @@
-#Idea Opus Proventus
 from utils import *
 
+# Win Settings
 
-#Win Settings
-win = CTk()
 win.geometry('800x800+550+150')
 win.resizable(False, False)
+<<<<<<< HEAD
+win.iconbitmap('button_icons/fire.ico')
+win.title('Prometa')
+set_appearance_mode('dark')
+
+
+=======
 win.title('Prometa')
 win.iconbitmap('button icons/fire-white.ico') # Для Макса - Тут для темної теми вікна береш fire-white, а для світлої fire
 
@@ -49,65 +54,14 @@ python_ico = CTkImage(dark_image=Image.open('button icons/python.png'), light_im
 settings_ico = CTkImage(dark_image=Image.open('button icons/setting.png'), light_image=Image.open('button icons/setting.png'), size=button_ico_size)
 
 
+>>>>>>> af6a04470ae3705305e9494a04818227bc6dd7ba
 # Creating buttons
-b1 = CTkButton(win, text='Календар', font=button_font, fg_color=button_color,
-               image=calendar_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b2 = CTkButton(win, text='Таймер', font=button_font, fg_color=button_color,
-               image=timer_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b3 = CTkButton(win, text='Погода', font=button_font, fg_color=button_color,
-               image=weather_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b4 = CTkButton(win, text='Блокнот', font=button_font, fg_color=button_color,
-               image=notes_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b5 = CTkButton(win, text='Калькулятор', font=button_font, fg_color=button_color,
-               image=calculator_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b6 = CTkButton(win, text='Rock', font=button_font, fg_color=button_color,
-               image=rock_game_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b7 = CTkButton(win, text='Змійка', font=button_font, fg_color=button_color,
-               image=snake_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b8 = CTkButton(win, text='Малюнки', font=button_font, fg_color=button_color,
-               image=pics_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b9 = CTkButton(win, text='Python', font=button_font, fg_color=button_color,
-               image=python_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-b10 = CTkButton(win, text='ПК', font=button_font, fg_color=button_color,
-               image=processes_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-
-b11 = CTkButton(win, text='Налаштування', font=button_font, fg_color=button_color,
-               image=settings_ico, compound=button_compound,
-               width=button_g, height=button_g, hover_color=button_hover_color,
-               corner_radius=button_radius)
-
-
-# Buttons placing
-b1.place(x=23, y=90)
-b2.place(x=220, y=90)
-b3.place(x=417, y=90)
-b4.place(x=623, y=90)
-b5.place(x=23, y=290)
-b6.place(x=220, y=290)
-b7.place(x=417, y=290)
-b8.place(x=623, y=290)
-b9.place(x=123, y=492)
-b10.place(x=320, y=492)
-b11.place(x=526, y=492)
+for i, (text, icon) in enumerate(zip(button_texts, button_icons), start=1):
+    button = CTkButton(win, text=text, font=button_font, fg_color=button_color,
+                       image=icon, compound=button_compound,
+                       width=button_g, height=button_g, hover_color=button_hover_color,
+                       corner_radius=button_radius)
+    button.place(x=23 + ((i - 1) % 4) * 197, y=90 + ((i - 1) // 4) * 200)
+    buttons.append(button)
 
 win.mainloop()
