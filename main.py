@@ -19,4 +19,3 @@ for i, (text, icon) in enumerate(zip(button_texts, button_icons), start=1):
     buttons.append(button)
 
 win.mainloop()
-
