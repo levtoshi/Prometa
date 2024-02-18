@@ -10,7 +10,7 @@ set_appearance_mode('dark')
 
 
 win.title('Prometa')
-win.iconbitmap('button icons/fire-white.ico') # Для Макса - Тут для темної теми вікна береш fire-white, а для світлої fire
+win.iconbitmap('button_icons/fire-white.ico') # Для Макса - Тут для темної теми вікна береш fire-white, а для світлої fire
 
 
 
