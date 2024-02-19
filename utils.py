@@ -3,11 +3,18 @@ from turtle import *
 from time import *
 from PIL import Image
 from tkinter import messagebox
-
+from Apps.controller import *
 
 # Config 
 
 win = CTk()
+
+# Main Frame
+m_frame = CTkFrame(master = win, width = 800, height=700, fg_color = "transparent")
+m_frame.grid(row=0, column=0, pady = 50, sticky="nsew")
+
+def pr():
+    print("+")
 
 buttons = []
 
@@ -26,6 +33,8 @@ icon_names = ['calendar', 'timer', 'weather', 'notes', 'calculator', 'rock-paper
 button_icons = [CTkImage(dark_image=Image.open(f'button_icons/{name}.png'),
                          light_image=Image.open(f'button_icons/{name}.png'),
                          size=button_ico_size) for name in icon_names]
+button_func = [pr, pr, pr, pr, pr, pr,
+              pr, pr, pr, pr, pr]
 
 # Button texts
 button_texts = ['Календар', 'Таймер', 'Погода', 'Блокнот', 'Калькулятор',
@@ -74,3 +83,12 @@ class ThemeController():
 
 ThemeController = ThemeController("dark")
 ThemeController.createButton()
+
+AppController = AppController()
+
+class FrameController():
+    def CMainMenu(self, state):
+        if state:
+            pass
+        else:
+            pass

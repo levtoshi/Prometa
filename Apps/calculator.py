@@ -1,4 +1,7 @@
-from utils import *
+from ..utils import *
+
+def Start_calculator():
+    app.mainloop()
 
 app = CTk()
 app.title('Калькулятор')
@@ -112,4 +115,3 @@ b18_button.place(x=158,y=253)
 """title = CTkLabel(app, text_color='#ffffff', text='Калькулятор', font=font2, fg_color='#a0a0a0', hover_color='#3d3d3d', border_color='#000000', height=68, width=10, corner_radius=16)  # Замінено CTkTextbox на CTkLabel
 title.place(x=83, y=10)"""
 
-app.mainloop()
