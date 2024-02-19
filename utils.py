@@ -1,15 +1,56 @@
-from customtkinter import *
-from turtle import *
-from time import *
-from PIL import Image
-from tkinter import messagebox
-
+from imports import *
+from prog_starts import *
 
 # Config 
 
 win = CTk()
 
 buttons = []
+
+
+def calendar():
+    calendar_start()
+    print('calendar')
+
+def timer():
+    timer_start()
+    print('timer')
+
+def weather():
+    weather_start()
+    print('weather')
+
+def notes():
+    notes_start()
+    print('notes')
+
+def calculator():
+    calc_start()
+    print('calculator')
+
+def rock_game():
+    rock_start()
+    print('rock_game')
+def snake():
+    snake_start()
+    print('snake')
+
+def pics():
+    pictures_start()
+    print('pics')
+
+def cpu():
+    pc_start()
+    print('cpu')
+
+def python():
+    python_start()
+    print('python')
+
+def setting():
+    setting_start()
+    print('setting')
+
 
 # Button settings
 button_font = ('Roboto', 13)
@@ -26,6 +67,8 @@ icon_names = ['calendar', 'timer', 'weather', 'notes', 'calculator', 'rock-paper
 button_icons = [CTkImage(dark_image=Image.open(f'button_icons/{name}.png'),
                          light_image=Image.open(f'button_icons/{name}.png'),
                          size=button_ico_size) for name in icon_names]
+
+button_command = [calendar, timer, weather, notes, calculator, rock_game, snake, pics, cpu, python, setting]
 
 # Button texts
 button_texts = ['Календар', 'Таймер', 'Погода', 'Блокнот', 'Калькулятор',
