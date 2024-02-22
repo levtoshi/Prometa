@@ -1,11 +1,9 @@
-from imports import *
 from prog_starts import *
+from win import *
 
 # Config 
 
 win = CTk()
-from win import *
-from prog_starts import *
 
 # Config
 
@@ -70,11 +68,7 @@ def calculator():
 def rock_game():
     rock_start()
     print('rock_game')
-def snake():
-    clear()
-    back()
-    rock_start()
-    print('rock_game')
+
 def snake():
     clear()
     back()
