@@ -1,3 +1,3 @@
-from imports import *
+from win import win
 def snake_start():
-    print('Started')
+    print('In process')

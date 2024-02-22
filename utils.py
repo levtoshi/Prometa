@@ -4,27 +4,66 @@ from prog_starts import *
 # Config 
 
 win = CTk()
+from win import *
+from prog_starts import *
+
+# Config
 
 buttons = []
 
 
+def clear():
+    for i in buttons:
+        i.destroy()
+    ThemeController.change_theme.destroy()
+    buttons.clear()
+
+def back():
+    global back_
+    back_ = CTkButton(win, text='Назад', font=button_font, fg_color=button_color,
+                       width=button_g, height=50, hover_color=button_hover_color,
+                       corner_radius=button_radius, command=menu)
+    back_.place(x=10, y=10)
+
+def menu():
+    for i in range(1,12):
+        for i, (text, icon, command) in enumerate(zip(button_texts, button_icons, button_command), start=1):
+            button = CTkButton(win, text=text, font=button_font, fg_color=button_color,
+                               image=icon, compound=button_compound,
+                               width=button_g, height=button_g, hover_color=button_hover_color,
+                               corner_radius=button_radius, command=command)
+            button.place(x=23 + ((i - 1) % 4) * 197, y=90 + ((i - 1) // 4) * 200)
+            buttons.append(button)
+        ThemeController.createButton()
+    back_.destroy()
+
 def calendar():
+    clear()
+    back()
     calendar_start()
     print('calendar')
 
 def timer():
+    clear()
+    back()
     timer_start()
     print('timer')
 
 def weather():
+    clear()
+    back()
     weather_start()
     print('weather')
 
 def notes():
+    clear()
+    back()
     notes_start()
     print('notes')
 
 def calculator():
+    clear()
+    back()
     calc_start()
     print('calculator')
 
@@ -32,22 +71,37 @@ def rock_game():
     rock_start()
     print('rock_game')
 def snake():
+    clear()
+    back()
+    rock_start()
+    print('rock_game')
+def snake():
+    clear()
+    back()
     snake_start()
     print('snake')
 
 def pics():
+    clear()
+    back()
     pictures_start()
     print('pics')
 
 def cpu():
+    clear()
+    back()
     pc_start()
     print('cpu')
 
 def python():
+    clear()
+    back()
     python_start()
     print('python')
 
 def setting():
+    clear()
+    back()
     setting_start()
     print('setting')
 
