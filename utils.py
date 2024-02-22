@@ -1,10 +1,6 @@
 from prog_starts import *
 from win import *
 
-# Config 
-
-win = CTk()
-
 # Config
 
 buttons = []
@@ -13,6 +9,7 @@ buttons = []
 def clear():
     for i in buttons:
         i.destroy()
+    ThemeController.change_theme.destroy()
     buttons.clear()
 
 def back():
@@ -21,6 +18,7 @@ def back():
                        width=button_g, height=50, hover_color=button_hover_color,
                        corner_radius=button_radius, command=menu)
     back_.place(x=10, y=10)
+    ThemeController.createButton()
 
 def menu():
     for i, (text, icon, command) in enumerate(zip(button_texts, button_icons, button_command), start=1):
@@ -30,6 +28,7 @@ def menu():
                             corner_radius=button_radius, command=command)
         button.place(x=23 + ((i - 1) % 4) * 197, y=90 + ((i - 1) // 4) * 200)
         buttons.append(button)
+    ThemeController.createButton()
     back_.destroy()
 
 def calendar():
@@ -63,6 +62,8 @@ def calculator():
     print('calculator')
 
 def rock_game():
+    clear()
+    back()
     rock_start()
     print('rock_game')
 
@@ -108,7 +109,7 @@ button_compound = 'top'
 
 # Icons for button
 icon_names = ['calendar', 'timer', 'weather', 'notes', 'calculator', 'rock-paper-scissors',
-              'snake', 'pics', 'cpu', 'python', 'setting']
+              'snake', 'pics', 'python', 'cpu', 'setting']
 button_icons = [CTkImage(dark_image=Image.open(f'button_icons/{name}.png'),
                          light_image=Image.open(f'button_icons/{name}.png'),
                          size=button_ico_size) for name in icon_names]
