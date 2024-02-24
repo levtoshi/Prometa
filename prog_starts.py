@@ -1,3 +1,4 @@
+# Functions
 from calendar import calendar_start
 from timer import timer_start
 from weather import weather_start
