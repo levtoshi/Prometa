@@ -1,3 +1,5 @@
 from imports import *
-def setting_start():
+from win import win
+def setting_start(parent):
+    win = parent
     print('Started')

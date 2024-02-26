@@ -42,6 +42,7 @@ def menu():
 def calendar():
     clear()
     back()
+    ThemeController.ShowMainFrame(True)
     calendar_start()
     print('calendar')
 
@@ -49,21 +50,24 @@ def calendar():
 def timer():
     clear()
     back()
-    timer_start()
+    ThemeController.ShowMainFrame(True)
+    timer_start(Main_Frame)
     print('timer')
 
 
 def weather():
     clear()
     back()
-    weather_start()
+    ThemeController.ShowMainFrame(True)
+    weather_start(Main_Frame)
     print('weather')
 
 
 def notes():
     clear()
     back()
-    notes_start()
+    ThemeController.ShowMainFrame(True)
+    notes_start(Main_Frame)
     print('notes')
 
 
@@ -78,42 +82,45 @@ def calculator():
 def rock_game():
     clear()
     back()
-    rock_start()
+    ThemeController.ShowMainFrame(True)
+    rock_start(Main_Frame)
     print('rock_game')
 
 
 def snake():
     clear()
     back()
-    snake_start()
+    ThemeController.ShowMainFrame(True)
+    snake_start(Main_Frame)
     print('snake')
 
 
 def pics():
     clear()
     back()
-    pictures_start()
+    ThemeController.ShowMainFrame(True)
+    pictures_start(Main_Frame)
     print('pics')
-
-
-def cpu():
-    clear()
-    back()
-    pc_start()
-    print('cpu')
-
 
 def python():
     clear()
     back()
-    python_start()
+    ThemeController.ShowMainFrame(True)
+    python_start(Main_Frame)
     print('python')
 
+def cpu():
+    clear()
+    back()
+    ThemeController.ShowMainFrame(True)
+    pc_start(Main_Frame)
+    print('cpu')
 
 def setting():
     clear()
     back()
-    setting_start()
+    ThemeController.ShowMainFrame(True)
+    setting_start(Main_Frame)
     print('setting')
 
 

@@ -1,3 +1,5 @@
 from imports import *
-def rock_start():
+from win import win
+def rock_start(parent):
+    win = parent
     print('Started')

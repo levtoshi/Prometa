@@ -1,3 +1,5 @@
 from imports import *
-def weather_start():
+from win import win
+def weather_start(parent):
+    win = parent
     print('Started')

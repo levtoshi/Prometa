@@ -1,3 +1,5 @@
 from imports import *
-def calendar_start():
+from win import win
+def calendar_start(parent):
+    win = parent
     print('Started')

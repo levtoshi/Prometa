@@ -1,3 +1,5 @@
 from imports import *
-def notes_start():
+from win import win
+def notes_start(parent):
+    win = parent
     print('Started')
