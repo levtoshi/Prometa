@@ -3,7 +3,7 @@ from win import *
 def python_start(parent):
     from utils import menu
 
-    '''win = parent
+    win = parent
 
     # Obj settings
 
@@ -167,4 +167,3 @@ def python_start(parent):
 
     frame_list = [fdata(0), fbasic_func, findex, fbranch, foperators, frandom, fmath, fdef_]
     fdata(0)
-'''

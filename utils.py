@@ -43,7 +43,7 @@ def calendar():
     clear()
     back()
     ThemeController.ShowMainFrame(True)
-    calendar_start()
+    calendar_start(Main_Frame)
     print('calendar')
 
 
