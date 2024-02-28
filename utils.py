@@ -116,13 +116,6 @@ def cpu():
     pc_start(Main_Frame)
     print('cpu')
 
-def setting():
-    clear()
-    back()
-    ThemeController.ShowMainFrame(True)
-    setting_start(Main_Frame)
-    print('setting')
-
 
 # Button settings
 button_font = ('Roboto', 13)
@@ -135,16 +128,16 @@ button_compound = 'top'
 
 # Icons for button
 icon_names = ['calendar', 'timer', 'weather', 'notes', 'calculator', 'rock-paper-scissors',
-              'snake', 'pics', 'python', 'cpu', 'setting']
+              'snake', 'pics', 'python', 'cpu']
 button_icons = [CTkImage(dark_image=Image.open(f'button_icons/{name}.png'),
                          light_image=Image.open(f'button_icons/{name}.png'),
                          size=button_ico_size) for name in icon_names]
 
-button_command = [calendar, timer, weather, notes, calculator, rock_game, snake, pics, python, cpu, setting]
+button_command = [calendar, timer, weather, notes, calculator, rock_game, snake, pics, python, cpu]
 
 # Button texts
 button_texts = ['Календар', 'Таймер', 'Погода', 'Блокнот', 'Калькулятор',
-                'Rock', 'Змійка', 'Малюнки', 'Python', 'ПК', 'Налаштування']
+                'Rock', 'Змійка', 'Малюнки', 'Python', 'ПК']
 
 # Theme config
 Themes = {
