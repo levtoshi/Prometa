@@ -82,4 +82,6 @@ def timer_start(parent):
     button_start.place(x=50, y=450)
     button_pause.place(x=290, y=450)
     button_reset.place(x=530, y=450)
-    
+
+    copyright = CTkLabel(win, text='by Dmytro', font=('Arial', 18, 'bold'), width=150, height=50, anchor='center')
+    copyright.place(x=5, y=5)

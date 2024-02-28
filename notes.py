@@ -16,7 +16,7 @@ def notes_start(parent):
     global txt
     txt = CTkEntry(master=parent, placeholder_text="Введіть свій текст", width=600, height=400, border_width=2,
                    corner_radius=10)
-    txt.place(relx=0.5, rely=0.3, anchor=tkinter.CENTER)
+    txt.place(relx=0.5, rely=0.4, anchor=tkinter.CENTER)
 
     save = CTkButton(master=parent, width=120,
                      height=32,
@@ -25,4 +25,7 @@ def notes_start(parent):
                      text="Зберегти",
                      command=Save)
 
-    save.place(relx=0.5, rely=0.65, anchor=tkinter.CENTER)
+    save.place(relx=0.5, rely=0.75, anchor=tkinter.CENTER)
+
+    copyright = CTkLabel(parent, text='by Maksym', font=('Arial', 18, 'bold'), width=150, height=50, anchor='center')
+    copyright.place(x=5, y=5)

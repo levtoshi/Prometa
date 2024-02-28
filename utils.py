@@ -44,7 +44,6 @@ def calendar():
     back()
     ThemeController.ShowMainFrame(True)
     calendar_start(Main_Frame)
-    print('calendar')
 
 
 def timer():
@@ -52,7 +51,6 @@ def timer():
     back()
     ThemeController.ShowMainFrame(True)
     timer_start(Main_Frame)
-    print('timer')
 
 
 def weather():
@@ -60,7 +58,6 @@ def weather():
     back()
     ThemeController.ShowMainFrame(True)
     weather_start(Main_Frame)
-    print('weather')
 
 
 def notes():
@@ -68,7 +65,6 @@ def notes():
     back()
     ThemeController.ShowMainFrame(True)
     notes_start(Main_Frame)
-    print('notes')
 
 
 def calculator():
@@ -76,7 +72,6 @@ def calculator():
     back()
     ThemeController.ShowMainFrame(True)
     calc_start(Main_Frame)
-    print('calculator')
 
 
 def rock_game():
@@ -84,7 +79,6 @@ def rock_game():
     back()
     ThemeController.ShowMainFrame(True)
     rock_start(Main_Frame)
-    print('rock_game')
 
 
 def snake():
@@ -92,7 +86,6 @@ def snake():
     back()
     ThemeController.ShowMainFrame(True)
     snake_start(Main_Frame)
-    print('snake')
 
 
 def pics():
@@ -100,21 +93,18 @@ def pics():
     back()
     ThemeController.ShowMainFrame(True)
     pictures_start(Main_Frame)
-    print('pics')
 
 def python():
     clear()
     back()
     ThemeController.ShowMainFrame(True)
     python_start(Main_Frame)
-    print('python')
 
 def cpu():
     clear()
     back()
     ThemeController.ShowMainFrame(True)
     pc_start(Main_Frame)
-    print('cpu')
 
 
 # Button settings

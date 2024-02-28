@@ -157,6 +157,7 @@ def snake_start(parent):
         board = CTkCanvas(winx, bg=bg_color, width=game_width, height=game_height)
         board.pack()
         label = board.create_text(50, 20, text=f'Score: {score}', font=('ArcadeClassic', 16), fill='white')
+        copyright = board.create_text(58, 40, text='by  Dmytro', font=('ArcadeClassic', 15), fill='white')
 
         win.update()
         snake = Snake()
@@ -187,3 +188,5 @@ def snake_start(parent):
     tsc = CTkLabel(winx, text=f'', font=('ArcadeClassic', 50), text_color='#8366d4',
                    width=300, height=100, anchor='center')
     tsc.place(x=240, y=100)
+
+    copyright = CTkLabel(winx, text='by Dmytro', font=('Arial', 18, 'bold'), width=150, height=50, anchor='center', fg_color='transparent')

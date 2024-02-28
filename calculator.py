@@ -115,4 +115,5 @@ def calc_start(parent):
     """title = CTkLabel(app, text_color='#ffffff', text='Калькулятор', font=font2, fg_color='#a0a0a0', hover_color='#3d3d3d', border_color='#000000', height=68, width=10, corner_radius=16)  # Замінено CTkTextbox на CTkLabel
     title.place(x=83, y= 50+10)"""
 
-    app.mainloop()
+    copyright = CTkLabel(app, text='by Bogdan', font=('Arial', 18, 'bold'), width=150, height=50, anchor='center')
+    copyright.place(x=5, y=5)
