@@ -108,7 +108,7 @@ def cpu():
 
 
 # Button settings
-button_font = ('Roboto', 13)
+button_font = ('Roboto', 13, 'bold')
 button_color = '#2147cf'
 button_hover_color = '#0228b0'
 button_g = 150
@@ -155,6 +155,10 @@ class ThemeController():
 
     def changeTheme(self, theme):
         for button in buttons:
+            if theme == 'light':
+                button.configure(text_color='black')
+            else:
+                button.configure(text_color='white')
             button.configure(fg_color=Themes[theme][0], hover_color=Themes[theme][1])
             self.theme = theme
             self.change_theme.configure(fg_color=Themes[theme][0], hover_color=Themes[theme][1])
