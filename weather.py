@@ -248,3 +248,6 @@ def weather_start(parent):
     sunset_time_l.place(x=518, y=564)
 
     descr(description)
+
+    copyright = CTkLabel(win, text='by Dmytro', font=('Arial', 20, 'bold'), width=150, height=50, anchor='center')
+    copyright.place(x=600, y=620)
