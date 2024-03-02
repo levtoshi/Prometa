@@ -16,9 +16,9 @@ def clear():
 def back():
     global back_
     back_ = CTkButton(win, text='Назад', font=button_font, fg_color=button_color,
-                      width=button_g, height=50, hover_color=button_hover_color,
+                      width=button_g, height=45, hover_color=button_hover_color,
                       corner_radius=button_radius, command=menu)
-    back_.place(x=10, y=10)
+    back_.place(x=10, y=25)
     ThemeController.createButton()
 
 
@@ -169,7 +169,7 @@ class ThemeController():
 
         self.change_theme = CTkButton(win, width=32, height=32, image=_ico, corner_radius=min(32, 32) // 2, text="",
                                       command=changeTheme)
-        self.change_theme.place(x=695, y=20)
+        self.change_theme.place(x=695, y=30)
 
     def ShowMainFrame(self, state):
         if state:
