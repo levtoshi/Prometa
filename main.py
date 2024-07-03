@@ -5,13 +5,13 @@ from utils import *
 
 win.geometry('800x800+550+150')
 win.resizable(False, False)
-win.iconbitmap('button_icons/fire.ico')
+win.iconbitmap('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\fire.ico')
 win.title('Prometa')
 set_appearance_mode('dark')
 
 
 win.title('Prometa')
-win.iconbitmap('button_icons/fire-white.ico') # Для Макса - Тут для темної теми вікна береш fire-white, а для світлої fire
+win.iconbitmap('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\fire-white.ico') # Для Макса - Тут для темної теми вікна береш fire-white, а для світлої fire
 
 local_time = CTkLabel(win, font=('Arial', 14, 'bold'), anchor='center', text_color='white', width=800, height=10,
                       fg_color='black')

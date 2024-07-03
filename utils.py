@@ -119,8 +119,8 @@ button_compound = 'top'
 # Icons for button
 icon_names = ['calendar', 'timer', 'weather', 'notes', 'calculator', 'rock-paper-scissors',
               'snake', 'pics', 'python', 'cpu']
-button_icons = [CTkImage(dark_image=Image.open(f'button_icons/{name}.png'),
-                         light_image=Image.open(f'button_icons/{name}.png'),
+button_icons = [CTkImage(dark_image=Image.open(f'C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\{name}.png'),
+                         light_image=Image.open(f'C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\{name}.png'),
                          size=button_ico_size) for name in icon_names]
 
 button_command = [calendar, timer, weather, notes, calculator, rock_game, snake, pics, python, cpu]
@@ -164,8 +164,8 @@ class ThemeController():
             self.change_theme.configure(fg_color=Themes[theme][0], hover_color=Themes[theme][1])
 
     def createButton(self):
-        _ico = CTkImage(dark_image=Image.open('button_icons/calendar.png'), light_image=Image.open(
-            'button_icons/calendar.png'), size=(20, 20))
+        _ico = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\calendar.png'), light_image=Image.open(
+            'C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\calendar.png'), size=(20, 20))
 
         self.change_theme = CTkButton(win, width=32, height=32, image=_ico, corner_radius=min(32, 32) // 2, text="",
                                       command=changeTheme)

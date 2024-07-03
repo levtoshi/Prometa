@@ -132,15 +132,15 @@ def weather_start(parent):
     day_images = []
 
 
-    clear_sky_n = CTkImage(dark_image=Image.open('button_icons/weather/night/clear_sky_n.png'), size=(100, 100))
-    few_clouds_n = CTkImage(dark_image=Image.open('button_icons/weather/night/few_clouds_n.png'), size=(100, 100))
-    overcast_clouds_n = CTkImage(dark_image=Image.open('button_icons/weather/night/scattered_clouds.png'), size=(100, 100))
-    broken_clouds_n = CTkImage(dark_image=Image.open('button_icons/weather/night/broken_clouds.png'), size=(100, 100))
-    shower_rain_n = CTkImage(dark_image=Image.open('button_icons/weather/night/shower_rain.png'), size=(100, 100))
-    rain_n = CTkImage(dark_image=Image.open('button_icons/weather/night/rain_n.png'), size=(100, 100))
-    thunderstorm_n = CTkImage(dark_image=Image.open('button_icons/weather/night/thunderstorm.png'), size=(100, 100))
-    snow_n = CTkImage(dark_image=Image.open('button_icons/weather/night/snow.png'), size=(100, 100))
-    mist_n = CTkImage(dark_image=Image.open('button_icons/weather/night/mist.png'), size=(100, 100))
+    clear_sky_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\clear_sky_n.png'), size=(100, 100))
+    few_clouds_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\few_clouds_n.png'), size=(100, 100))
+    overcast_clouds_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\scattered_clouds.png'), size=(100, 100))
+    broken_clouds_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\broken_clouds.png'), size=(100, 100))
+    shower_rain_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\shower_rain.png'), size=(100, 100))
+    rain_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\rain_n.png'), size=(100, 100))
+    thunderstorm_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\thunderstorm.png'), size=(100, 100))
+    snow_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\snow.png'), size=(100, 100))
+    mist_n = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\night\\mist.png'), size=(100, 100))
 
 
     night_images.append(clear_sky_n)
@@ -154,15 +154,15 @@ def weather_start(parent):
     night_images.append(mist_n)
 
 
-    clear_sky_d = CTkImage(dark_image=Image.open('button_icons/weather/day/clear_sky_d.png'), size=(100, 100))
-    few_clouds_d = CTkImage(dark_image=Image.open('button_icons/weather/day/few_clouds_d.png'), size=(100, 100))
-    overcast_clouds_d = CTkImage(dark_image=Image.open('button_icons/weather/day/scattered_clouds.png'), size=(100, 100))
-    broken_clouds_d = CTkImage(dark_image=Image.open('button_icons/weather/day/broken_clouds.png'), size=(100, 100))
-    shower_rain_d = CTkImage(dark_image=Image.open('button_icons/weather/day/shower_rain.png'), size=(100, 100))
-    rain_d = CTkImage(dark_image=Image.open('button_icons/weather/day/rain_d.png'), size=(100, 100))
-    thunderstorm_d = CTkImage(dark_image=Image.open('button_icons/weather/day/thunderstorm.png'), size=(100, 100))
-    snow_d = CTkImage(dark_image=Image.open('button_icons/weather/day/snow.png'), size=(100, 100))
-    mist_d = CTkImage(dark_image=Image.open('button_icons/weather/day/mist.png'), size=(100, 100))
+    clear_sky_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\clear_sky_d.png'), size=(100, 100))
+    few_clouds_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\few_clouds_d.png'), size=(100, 100))
+    overcast_clouds_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\scattered_clouds.png'), size=(100, 100))
+    broken_clouds_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\broken_clouds.png'), size=(100, 100))
+    shower_rain_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\shower_rain.png'), size=(100, 100))
+    rain_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\rain_d.png'), size=(100, 100))
+    thunderstorm_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\thunderstorm.png'), size=(100, 100))
+    snow_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\snow.png'), size=(100, 100))
+    mist_d = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\weather\\day\\mist.png'), size=(100, 100))
 
     day_images.append(clear_sky_d)
     day_images.append(few_clouds_d)
@@ -174,7 +174,7 @@ def weather_start(parent):
     day_images.append(snow_d)
     day_images.append(mist_d)
 
-    redownload = CTkImage(dark_image=Image.open('button_icons/redownload.png'), size=(30, 30))
+    redownload = CTkImage(dark_image=Image.open('C:\\Users\\Intel\\PycharmProjects\\Prometa\\button_icons\\redownload.png'), size=(30, 30))
 
     descriptions_list = ['clear sky', 'few clouds', 'overcast clouds', 'broken clouds',
                          'shower rain', 'rain', 'thunderstorm', 'snow', 'mist']
